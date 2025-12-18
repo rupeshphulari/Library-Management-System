@@ -114,13 +114,12 @@ public class LibraryManagementSystem {
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             
-            // Validate input
             while (!scanner.hasNextInt()) {
                 System.out.println("Invalid input. Please enter a number.");
-                scanner.next(); // consume the invalid input
+                scanner.next(); 
             }
             choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -130,7 +129,7 @@ public class LibraryManagementSystem {
                         scanner.next();
                     }
                     int id = scanner.nextInt();
-                    scanner.nextLine(); // Consume newline
+                    scanner.nextLine(); 
                     System.out.print("Enter Title: ");
                     String title = scanner.nextLine();
                     System.out.print("Enter Author: ");
@@ -169,3 +168,4 @@ public class LibraryManagementSystem {
         scanner.close();
     }
 }
+
